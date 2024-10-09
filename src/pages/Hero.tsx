@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import Modal from "../components/Modal";
 
 const Hero: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const Hero: React.FC = () => {
           alt="Hero"
         />
       </div>
+      <Modal />
     </section>
   );
 };

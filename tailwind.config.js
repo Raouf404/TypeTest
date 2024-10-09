@@ -17,6 +17,7 @@ export const theme = {
       },
       taupe: "#D8D2C2",
       darkGray: "#4A4947",
+      darkGray75: "rgba(74, 73, 71, 0.75)",
     },
   },
 };
