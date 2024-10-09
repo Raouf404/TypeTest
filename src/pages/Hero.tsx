@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Button from "../components/Button";
 import Modal from "../components/Modal";
 
 const Hero: React.FC = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <section className="flex">
       <div className="h-screen w-1/2 flex flex-col justify-center px-[80px] bg-beige">
@@ -13,7 +16,7 @@ const Hero: React.FC = () => {
           test.
         </p>
         <div className="flex gap-4">
-          <Button label="Commancer le test">
+          <Button label="Commancer le test" onClick={() => setShowModal(true)}>
             <img
               className="ml-4 h-4 w-4"
               src="../../public/assets/icons/arrow-forward.svg"
@@ -29,7 +32,7 @@ const Hero: React.FC = () => {
           alt="Hero"
         />
       </div>
-      <Modal />
+      {showModal && <Modal onClick={() => setShowModal(false)} />}
     </section>
   );
 };
