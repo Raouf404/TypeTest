@@ -1,6 +1,6 @@
 import { useSettings } from "../utils/SettingsProvider";
-import { Link } from "react-router-dom";
 import { easyTexts, mediumTexts, hardTexts } from "../constants";
+import Navbar from "../components/Navbar";
 
 const Test: React.FC = () => {
   const { difficulty, time } = useSettings() as {
@@ -15,13 +15,15 @@ const Test: React.FC = () => {
   const selectedText = texts[difficulty][Math.floor(Math.random() * 6)];
 
   return (
-    <main>
-      <div>
-        {difficulty}, {time}
-      </div>
-      <div>{selectedText}</div>
-      <Link to="/">Retour</Link>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <div>
+          {difficulty}, {time}
+        </div>
+        <div>{selectedText}</div>
+      </main>
+    </>
   );
 };
 

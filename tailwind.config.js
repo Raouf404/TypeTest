@@ -3,6 +3,7 @@ export const theme = {
   extend: {
     fontFamily: {
       sans: ["Inter", "ui-sans-serif", "system-ui"],
+      cutive: ['"Cutive Mono"', "monospace"],
     },
     colors: {
       beige: {
