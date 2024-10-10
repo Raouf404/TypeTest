@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Button from "../components/Button";
 import Modal from "../components/Modal";
+import { keyboardImage } from "../assets/images";
+import { arrowForwardIcon } from "../assets/icons";
 
 const Hero: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -17,10 +19,7 @@ const Hero: React.FC = () => {
         </p>
         <div className="flex gap-4">
           <Button label="Commancer le test" onClick={() => setShowModal(true)}>
-            <img
-              className="ml-4 h-4 w-4"
-              src="../../public/assets/icons/arrow-forward.svg"
-            />
+            <img className="ml-4 h-4 w-4" src={arrowForwardIcon} />
           </Button>
           <Button label="Changer la langue" variant="beige" />
         </div>
@@ -28,7 +27,7 @@ const Hero: React.FC = () => {
       <div className="h-screen flex-1">
         <img
           className="h-full w-full object-cover"
-          src="../../public/assets/images/keyboard.jpg"
+          src={keyboardImage}
           alt="Hero"
         />
       </div>

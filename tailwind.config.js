@@ -20,6 +20,10 @@ export const theme = {
       darkGray: "#4A4947",
       darkGray75: "rgba(74, 73, 71, 0.75)",
     },
+    boxShadow: {
+      custom:
+        "0px 0px 4px 0px rgba(0, 0, 0, 0.04), 0px 4px 8px 0px rgba(0, 0, 0, 0.06)",
+    },
   },
 };
 export const plugins = [];
