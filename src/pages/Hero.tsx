@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section className="flex">
+    <main className="flex">
       <div className="h-screen w-1/2 flex flex-col justify-center px-[80px] bg-beige">
         <h1 className="mb-2 text-6xl font-bold">
           Testez la vitesse de votre écriture!
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
         />
       </div>
       {showModal && <Modal onClick={() => setShowModal(false)} />}
-    </section>
+    </main>
   );
 };
 
